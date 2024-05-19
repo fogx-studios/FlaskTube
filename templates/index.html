@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlaskTube!</title>
+    <style>
+        body {
+            background-color:gray;
+            text-align: center;
+            margin: auto;
+        }
+        h1 {
+            color:white;
+        }
+        p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <img src="../static/flasktube.png">
+    <h1>FlaskTube! - A YouTube downloader.</h1>
+    <form action="/download" method="post">
+        <p><label for="url">VIDEO URL:</label></p><br>
+        <textarea id="url" name="url" rows="4" cols="50" required></textarea><br><br>
+        <input type="submit" name="format" value="Download MP4">
+        <input type="submit" name="format" value="Download MP3">
+    </form>
+</body>
+</html>
